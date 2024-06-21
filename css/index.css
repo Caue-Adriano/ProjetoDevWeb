@@ -31,7 +31,11 @@ header {
 
         h1 {
             color: #fff;
-            margin: 10px;
+            margin: 10px 0 10px 0;
+        }
+
+        #if-name {
+            color: rgb(16, 214, 16);
         }
     }
 
@@ -92,12 +96,19 @@ body {
 
 #search-content {
     background-color: #fff;
-    width: 100px;
+    width: 135px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 auto;
+    border-radius: 10px;
+
+    button {
+        background-color: #000;
+        color: #fff;
+        padding: 5px;
+    }
 }
 
 /*
@@ -133,7 +144,8 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    border-radius: 10px;
+    width: 22%;
     position: relative;
 }
 
@@ -152,4 +164,36 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/*
+
+ /$$$$$$$$                                         
+| $$_____/                                         
+| $$     /$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$$
+| $$$$$ /$$__  $$ /$$__  $$| $$_  $$_  $$ /$$_____/
+| $$__/| $$  \ $$| $$  \__/| $$ \ $$ \ $$|  $$$$$$ 
+| $$   | $$  | $$| $$      | $$ | $$ | $$ \____  $$
+| $$   |  $$$$$$/| $$      | $$ | $$ | $$ /$$$$$$$/
+|__/    \______/ |__/      |__/ |__/ |__/|_______/ 
+
+*/
+
+.modal-content form {
+
+    #search-word-label{
+        font-weight: 700;
+    }
+
+    input[type=text] {
+        width: 282px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    
+    input[type=submit] {
+        padding: 5px;
+        color: #fff;
+        background-color: #000;
+    }
 }

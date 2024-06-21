@@ -12,7 +12,7 @@
 <body>
     <header>
         <div id="upperHeader">
-            <h1>IF Dicionário</h1>
+            <h1 id="if-name">IF</h1><h1>Dicionário</h1>
         </div>
         <div id="lowerHeader">
             <nav>
@@ -23,15 +23,24 @@
     </header>
     <h1 id="title">Dicionário</h1>
     <div id="search-content">
-        <button id="search-btn">Pesquisar</button>
+        <button id="search-btn">PESQUISAR</button>
     </div>
     <!--MODAL-->
     <div id="modal-background" class="background">
         <div class="modal-content">
             <span class="close">&times;</span>
             <form>
-                <label for="fname">Digite a palavra que deseja pesquisar:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+                <label for="search-word" id="search-word-label">Digite a palavra que deseja pesquisar:</label><br>
+                <input type="text" id="search-word" name="search-word"><br><br>
+                <h4>O que deseja ver?</h4>
+                <!--definição, exemplo e sinônimo-->
+                <input type="checkbox" id="search-definition" name="search-definition" value="definition">
+                <label for="search-definition">Definição</label><br>
+                <input type="checkbox" id="search-example" name="search-example" value="example">
+                <label for="search-example">Exemplo</label><br>
+                <input type="checkbox" id="search-synonym" name="search-synonym" value="synonym">
+                <label for="search-synonym">Sinônimos</label><br><br>
+                <input type="submit" value="PESQUISAR">
             </form>
         </div>
     </div>
