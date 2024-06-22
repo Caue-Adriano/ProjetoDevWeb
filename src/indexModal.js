@@ -1,7 +1,7 @@
 // Get the modal
 var modal = document.getElementById("modal-background");
 // Get the button that opens the modal
-var btn = document.getElementById("search-btn");
+var btn = document.getElementById("open-modal-btn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 

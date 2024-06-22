@@ -186,14 +186,94 @@ body {
     }
 
     input[type=text] {
-        width: 282px;
+        max-width: 282px;
+        width: 90%;
         padding: 5px;
         margin-top: 10px;
     }
     
-    input[type=submit] {
-        padding: 5px;
-        color: #fff;
-        background-color: #000;
+}
+
+#search-btn {
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+#error-msg {
+    color: red;
+    padding-top: 5px;
+    display: none;
+}
+
+/*
+
+ /$$$$$$$                                /$$   /$$                     /$$          
+| $$__  $$                              | $$  | $$                    | $$          
+| $$  \ $$  /$$$$$$   /$$$$$$$ /$$   /$$| $$ /$$$$$$    /$$$$$$   /$$$$$$$  /$$$$$$ 
+| $$$$$$$/ /$$__  $$ /$$_____/| $$  | $$| $$|_  $$_/   |____  $$ /$$__  $$ /$$__  $$
+| $$__  $$| $$$$$$$$|  $$$$$$ | $$  | $$| $$  | $$      /$$$$$$$| $$  | $$| $$  \ $$
+| $$  \ $$| $$_____/ \____  $$| $$  | $$| $$  | $$ /$$ /$$__  $$| $$  | $$| $$  | $$
+| $$  | $$|  $$$$$$$ /$$$$$$$/|  $$$$$$/| $$  |  $$$$/|  $$$$$$$|  $$$$$$$|  $$$$$$/
+|__/  |__/ \_______/|_______/  \______/ |__/   \___/   \_______/ \_______/ \______/ 
+
+*/
+
+.result {
+    width: 755px;
+    min-height: 150px;
+    height: auto;
+    margin: 50px auto 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none; 
+
+    .result-word {
+        width: auto;
+        height: 50px;
+        background-color: #fff;
+        margin: 0 10px 10px 10px;
+        padding: 20px 5px 0 0;
+        position: relative;
+
+        button {
+            position: absolute;
+            bottom: 25px;
+            right: 1px;
+            /*font-weight: 800;*/
+            font-size: 28px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            color: #aaaaaa;
+            display: flex;
+            align-items: center;
+        }
+
+        button:active,
+        button:hover {
+            color: #000;
+        }
+    }
+
+    .result-word-meaning,
+    .result-example,
+    .result-synonym {
+        width: auto;
+        min-height: 50px;
+        height: auto;
+        background-color: #fff;
+        margin: 0 10px 10px 10px;
+        padding: 0 20px 10px 20px;
+    }
+
+    h2 {
+        padding-bottom: 5px;
+    }
+
+    p {
+        text-align: justify;
     }
 }
