@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/dicionario.css">
+
+    <title>Dicionário</title>
+</head>
+<body>
+    <header>
+        <div id="upperHeader">
+            <h1 id="if-name">IF</h1><h1>Utility</h1>
+        </div>
+        <div id="lowerHeader">
+            <nav>
+                <a href="dicionario.html"><p>Dictionary</p></a>
+                <a href="index.html"><p>QR Code Generator</p></a>
+            </nav>
+        </div>
+    </header>
+    <h1 id="title">Dictionary</h1>
+    <div id="search-content">
+        <button id="open-modal-btn">SEARCH</button>
+    </div>
+    <!--MODAL-->
+    <div id="modal-background" class="background">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="src/pesquisa.js">
+                <label for="search-word" id="search-word-label">Enter the word you want to search:</label><br>
+                <input type="text" id="search-word" placeholder="Type Here"><br><br>
+                
+                <p>Do you wish to see examples?</p>
+                    <input type="radio" id="example-choice-yes" name="example-choice" value="yes">
+                    <label for="example-choice-yes">Yes</label><br>
+                    <input type="radio" id="example-choice-no" name="example-choice" value="no">
+                    <label for="example-choice-no">No</label><br><br>
+            </form>
+            <button id="search-btn">SEARCH</button>
+            <p id="error-msg">Couldn't find the word! Try again</p>
+        </div>
+    </div>
+    
+    <div class="result" id="result">
+        <button id="close-result">&times;</button>
+    </div>
+
+    <!--Modal JS-->
+    <script src="src/dicionarioModal.js"></script>
+
+    <!--Pesquisa JS-->
+    <script src="src/pesquisa.js"></script>
+</body>
+</html>

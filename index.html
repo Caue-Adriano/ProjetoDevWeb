@@ -1,57 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Generator | CodingNepal</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/QRcode.css">
 
-    <title>Dicionário</title>
-</head>
-<body>
-    <header>
-        <div id="upperHeader">
-            <h1 id="if-name">IF</h1><h1>Dicionário</h1>
-        </div>
-        <div id="lowerHeader">
-            <nav>
-                <a href="index.html"><p>Dicionário</p></a>
-                <a href="#"><p>placeholder</p></a>
-            </nav>
-        </div>
-    </header>
-    <h1 id="title">Dicionário</h1>
-    <div id="search-content">
-        <button id="open-modal-btn">PESQUISAR</button>
-    </div>
-    <!--MODAL-->
-    <div id="modal-background" class="background">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form action="src/pesquisa.js">
-                <label for="search-word" id="search-word-label">Digite a palavra que deseja pesquisar:</label><br>
-                <input type="text" id="search-word"><br><br>
-                
-                <p>Deseja ver exemplos?</p>
-                    <input type="radio" id="example-choice-yes" name="example-choice" value="yes">
-                    <label for="example-choice-yes">Sim</label><br>
-                    <input type="radio" id="example-choice-no" name="example-choice" value="no">
-                    <label for="example-choice-no">Não</label><br><br>
-            </form>
-            <button id="search-btn">PESQUISAR</button>
-            <p id="error-msg">Não foi possível achar a palavra! Tente Novamente</p>
-        </div>
-    </div>
-    
-    <div class="result" id="result">
-        <button id="close-result">&times;</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="header">
+      <div id="upperHeader">
+        <h1 id="if-name">IF</h1><h1>Utility</h1>
+      </div>
+      <div id="lowerHeader">
+        <nav>
+          <a href="dicionario.html"><p>Dictionary</p></a>
+          <a href="index.html"><p>QR Code Generator</p></a>
+        </nav>
+      </div>
     </div>
 
-    <!--Modal JS-->
-    <script src="src/indexModal.js"></script>
 
-    <!--Pesquisa JS-->
-    <script src="src/pesquisa.js"></script>
-</body>
+    <div class="wrapper">
+      <header>
+        <h1>QR Code Generator</h1>
+        <p>Paste a url or enter text to create QR code</p>
+      </header>
+      <div class="form">
+        <input type="text" spellcheck="false" placeholder="Enter text or url">
+        <button>Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+        <button id="close-qrcode">&times;</button>
+        <img src="" alt="qr-code">
+      </div>
+    </div>
+
+    <script src="src/QRcode.js"></script>
+
+  </body>
 </html>

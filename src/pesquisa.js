@@ -21,11 +21,11 @@ searchBtn.addEventListener("click", () => {
                 <button id="close-result">&times;</button>
             </div>
             <div class="result-word-meaning">
-                <h2>Significado:</h2>
+                <h2>Meaning:</h2>
                 <p>${data[0].meanings[0].definitions[0].definition}</p>
             </div>
             <div class="result-example">
-                <h2>Exemplo:</h2>
+                <h2>Example:</h2>
                 <p>${data[0].meanings[0].definitions[0].example || "Example not found"}</p>
             </div>
             `;
@@ -53,7 +53,7 @@ searchBtn.addEventListener("click", () => {
                 <button id="close-result">&times;</button>
             </div>
             <div class="result-word-meaning">
-                <h2>Significado:</h2>
+                <h2>Meaning:</h2>
                 <p>${data[0].meanings[0].definitions[0].definition}</p>
             </div>
             `;

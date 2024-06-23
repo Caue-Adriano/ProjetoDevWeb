@@ -105,7 +105,10 @@ body {
     border-radius: 10px;
 
     button {
-        background-color: #000;
+        background-color: rgb(16, 214, 16);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
         color: #fff;
         padding: 5px;
     }
@@ -197,7 +200,10 @@ body {
 #search-btn {
     padding: 5px;
     color: #fff;
-    background-color: #000;
+    background-color: rgb(16, 214, 16);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #error-msg {
